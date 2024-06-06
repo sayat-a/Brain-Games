@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = "'Проект \"Игры Разума\"'"
+authors = ["Sayat Aubakirov <sayat_aubakirov@mail.ru>"]
+readme = "README.md"
+packages = [
+  { include = "brain_games" },
+]
+
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+prompt = "^0.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+packages = [
+  { include = "brain_games" },
+]
