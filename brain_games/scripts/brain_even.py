@@ -5,6 +5,7 @@ import random
 def is_even(n):
     return n % 2 == 0
 
+
 def main():
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
@@ -26,7 +27,8 @@ def main():
             print(f"Let's try again, {user_name}!")
             break
     if count_right == 3:
-        print(f'Congratulations, {user_name}!')        
+        print(f'Congratulations, {user_name}!')
+
 
 if __name__ == '__main__':
     main()
