@@ -3,5 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ea3fe633e82fcc866f94/maintainability)](https://codeclimate.com/github/sayat-a/python-project-49/maintainability)
 
-brain-even demo:
+brain-even demo (https://asciinema.org/a/XV4iADSpN3Qbvp5SCLDi5GfAu):
 ![demo](https://github.com/sayat-a/python-project-49/blob/main/demo-brain-even.gif)
+
+brain-gcd demo (https://asciinema.org/a/mLYdve69UrTh14yLR6gWrXbFV):
+![demo](https://github.com/sayat-a/python-project-49/blob/main/demo-brain-gcd.gif)
