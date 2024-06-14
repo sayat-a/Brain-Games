@@ -3,4 +3,4 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ea3fe633e82fcc866f94/maintainability)](https://codeclimate.com/github/sayat-a/python-project-49/maintainability)
 
-![brain-even usage demo] (https://github.com/sayat-a/python-project-49/demo-brain-even.gif)
+![brain-even usage demo] (https://github.com/sayat-a/python-project-49/blob/main/demo-brain-even.gif)
