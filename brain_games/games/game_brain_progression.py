@@ -1,5 +1,5 @@
-import prompt
 import random
+from . import game_logic
 
 
 def generate_progression():
@@ -17,22 +17,18 @@ def generate_progression():
 
 
 def play_brain_progression():
-    print('Welcome to the Brain Games!')
-    user_name = prompt.string('May I have your name? ')
-    print(f'Hello, {user_name}!')
+    user_name = game_logic.greet_user()
     print('What number is missing in the progression?')
     count_right = 0
     while count_right < 3:
         progression, right_answer = generate_progression()
         string = ' '.join(progression)
         print(f'Question: {string}')
-        answer = prompt.string('Your answer: ')
+        answer = game_logic.ask_user_answer()
         if int(answer) == right_answer:
-            count_right += 1
-            print('Correct!')
+            count_right = game_logic.win_round(count_right)
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
-            print(f"Let's try again, {user_name}!")
+            game_logic.lose_round(answer, right_answer, user_name)
             break
     if count_right == 3:
-        print(f'Congratulations, {user_name}!')
+        game_logic.congratulate(user_name)
