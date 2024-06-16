@@ -8,3 +8,6 @@ brain-even demo (https://asciinema.org/a/XV4iADSpN3Qbvp5SCLDi5GfAu):
 
 brain-gcd demo (https://asciinema.org/a/mLYdve69UrTh14yLR6gWrXbFV):
 ![demo](https://github.com/sayat-a/python-project-49/blob/main/demo-brain-gcd.gif)
+
+brain-progression demo (https://asciinema.org/a/Za99Hd8wyiVRz3G5m1QyqXgGS):
+![demo](https://github.com/sayat-a/python-project-49/blob/main/demo-brain-progression.gif)
