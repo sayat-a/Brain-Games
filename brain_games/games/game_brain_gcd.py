@@ -1,5 +1,5 @@
-import prompt
 import random
+from . import game_logic
 
 
 def find_gcd(number1, number2):
@@ -12,9 +12,7 @@ def find_gcd(number1, number2):
 
 
 def play_brain_gcd():
-    print('Welcome to the Brain Games!')
-    user_name = prompt.string('May I have your name? ')
-    print(f'Hello, {user_name}!')
+    user_name = game_logic.greet_user()
     print('Find the greatest common divisor of given numbers.')
     count_right = 0
     while count_right < 3:
@@ -22,13 +20,11 @@ def play_brain_gcd():
         number2 = random.randint(10, 100)
         right_answer = find_gcd(number1, number2)
         print(f'Question: {number1} {number2}')
-        answer = prompt.string('Your answer: ')
+        answer = game_logic.ask_user_answer()
         if int(answer) == right_answer:
-            count_right += 1
-            print('Correct!')
+            count_right = game_logic.win_round(count_right)
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
-            print(f"Let's try again, {user_name}!")
+            game_logic.lose_round(answer, right_answer, user_name)
             break
     if count_right == 3:
-        print(f'Congratulations, {user_name}!')
+        game_logic.congratulate(user_name)
