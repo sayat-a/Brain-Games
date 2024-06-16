@@ -15,7 +15,7 @@ def is_prime(number):
 
 def play_brain_prime():
     user_name = game_logic.greet_user()
-    print('Answer "yes" if given number is prime, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     count_right = 0
     while count_right < 3:
         number = random.randint(2, 100)
