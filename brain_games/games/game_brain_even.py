@@ -1,5 +1,5 @@
-import prompt
 import random
+from . import game_logic
 
 
 def is_even(n):
@@ -7,9 +7,9 @@ def is_even(n):
 
 
 def play_brain_even():
-    print('Welcome to the Brain Games!')
-    user_name = prompt.string('May I have your name? ')
-    print(f'Hello, {user_name}!')
+    game_logic.welcome()
+    user_name = game_logic.ask_name()
+    game_logic.greet_user(user_name)
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count_right = 0
     while count_right < 3:
@@ -19,13 +19,11 @@ def play_brain_even():
         elif not is_even(number):
             right_answer = 'no'
         print(f'Question: {number}')
-        answer = prompt.string('Your answer: ')
+        answer = game_logic.ask_user_answer()
         if answer == right_answer:
-            count_right += 1
-            print('Correct!')
+            count_right = game_logic.win_round(count_right)
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
-            print(f"Let's try again, {user_name}!")
+            game_logic.lose_round(answer, right_answer, user_name)
             break
     if count_right == 3:
-        print(f'Congratulations, {user_name}!')
+        game_logic.congratulate(user_name)
