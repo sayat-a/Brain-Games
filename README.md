@@ -11,3 +11,6 @@ brain-gcd demo (https://asciinema.org/a/mLYdve69UrTh14yLR6gWrXbFV):
 
 brain-progression demo (https://asciinema.org/a/Za99Hd8wyiVRz3G5m1QyqXgGS):
 ![demo](https://github.com/sayat-a/python-project-49/blob/main/demo-brain-progression.gif)
+
+brain-prime demo (https://asciinema.org/a/XlDUU6qA6ugwKpll8R26i0Kl9):
+![demo](https://github.com/sayat-a/python-project-49/blob/main/demo-brain-prime.gif)
