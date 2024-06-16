@@ -7,9 +7,7 @@ def is_even(n):
 
 
 def play_brain_even():
-    game_logic.welcome()
-    user_name = game_logic.ask_name()
-    game_logic.greet_user(user_name)
+    user_name = game_logic.greet_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count_right = 0
     while count_right < 3:
