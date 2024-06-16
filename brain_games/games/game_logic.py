@@ -1,17 +1,11 @@
 import prompt
 
 
-def ask_name():
-    user_name = prompt.string('May I have your name? ')
-    return user_name
-
-
-def welcome():
+def greet_user():
     print('Welcome to the Brain Games!')
-
-
-def greet_user(user_name):
+    user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
+    return user_name
 
 
 def ask_user_answer():
