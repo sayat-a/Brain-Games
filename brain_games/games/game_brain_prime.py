@@ -17,7 +17,7 @@ def play_brain_prime():
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    print('Answer "yes" if the number is prime, otherwise answer "no".')
+    print('Answer "yes" if given number is prime, otherwise answer "no".')
     count_right = 0
     while count_right < 3:
         number = random.randint(2, 100)
