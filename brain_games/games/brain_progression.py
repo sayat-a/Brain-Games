@@ -1,5 +1,5 @@
 import random
-from . import game_logic
+from . import logic
 
 
 def generate_progression():
@@ -17,18 +17,18 @@ def generate_progression():
 
 
 def play_brain_progression():
-    user_name = game_logic.greet_user()
+    user_name = logic.greet_user()
     print('What number is missing in the progression?')
     count_right = 0
     while count_right < 3:
         progression, right_answer = generate_progression()
         string = ' '.join(progression)
         print(f'Question: {string}')
-        answer = game_logic.ask_user_answer()
+        answer = logic.ask_user_answer()
         if int(answer) == right_answer:
-            count_right = game_logic.win_round(count_right)
+            count_right = logic.win_round(count_right)
         else:
-            game_logic.lose_round(answer, right_answer, user_name)
+            logic.lose_round(answer, right_answer, user_name)
             break
     if count_right == 3:
-        game_logic.congratulate(user_name)
+        logic.congratulate(user_name)
