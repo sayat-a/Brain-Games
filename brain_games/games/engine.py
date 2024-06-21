@@ -34,7 +34,7 @@ def start_game(game):
     while count < 3:
         right_answer = game.generate_question()
         answer = ask_user_answer()
-        if answer == right_answer:
+        if answer == str(right_answer):
             count = win_round(count)
         else:
             lose_round(answer, right_answer, user_name)
