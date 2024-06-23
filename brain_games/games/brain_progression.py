@@ -20,6 +20,5 @@ def generate_progression():
 
 def generate_question():
     progression, right_answer = generate_progression()
-    string = ' '.join(progression)
-    question = f'Question: {string}'
+    question = ' '.join(progression)
     return right_answer, question

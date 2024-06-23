@@ -21,5 +21,5 @@ def generate_question():
         right_answer = 'yes'
     elif not is_prime(number):
         right_answer = 'no'
-    question = f'Question: {number}'
+    question = f'{number}'
     return right_answer, question

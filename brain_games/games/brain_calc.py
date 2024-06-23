@@ -19,5 +19,5 @@ def generate_question():
     number2 = random.randint(1, 100)
     operator = random.choice(['+', '-', '*'])
     right_answer = calculate_answer(number1, number2, operator)
-    question = f'Question: {number1} {operator} {number2}'
+    question = f'{number1} {operator} {number2}'
     return right_answer, question
