@@ -1,8 +1,7 @@
 import random
 
 
-def show_rules():
-    print('What number is missing in the progression?')
+GAME_RULES = 'What number is missing in the progression?'
 
 
 def generate_progression():
@@ -22,5 +21,5 @@ def generate_progression():
 def generate_question():
     progression, right_answer = generate_progression()
     string = ' '.join(progression)
-    print(f'Question: {string}')
-    return right_answer
+    question = f'Question: {string}'
+    return right_answer, question

@@ -1,8 +1,7 @@
 import random
 
 
-def show_rules():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
@@ -22,5 +21,5 @@ def generate_question():
         right_answer = 'yes'
     elif not is_prime(number):
         right_answer = 'no'
-    print(f'Question: {number}')
-    return right_answer
+    question = f'Question: {number}'
+    return right_answer, question

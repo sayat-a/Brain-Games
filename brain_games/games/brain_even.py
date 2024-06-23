@@ -1,8 +1,7 @@
 import random
 
 
-def show_rules():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(n):
@@ -15,5 +14,5 @@ def generate_question():
         right_answer = 'yes'
     elif not is_even(number):
         right_answer = 'no'
-    print(f'Question: {number}')
-    return right_answer
+    question = f'Question: {number}'
+    return right_answer, question

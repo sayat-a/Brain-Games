@@ -1,8 +1,7 @@
 import random
 
 
-def show_rules():
-    print('What is the result of the expression?')
+GAME_RULES = 'What is the result of the expression?'
 
 
 def calculate_answer(num1, num2, operator):
@@ -20,5 +19,5 @@ def generate_question():
     number2 = random.randint(1, 100)
     operator = random.choice(['+', '-', '*'])
     right_answer = calculate_answer(number1, number2, operator)
-    print(f'Question: {number1} {operator} {number2}')
-    return right_answer
+    question = f'Question: {number1} {operator} {number2}'
+    return right_answer, question
