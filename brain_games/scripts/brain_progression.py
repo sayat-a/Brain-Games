@@ -1,5 +1,5 @@
-from ..games import brain_progression
-from ..games import engine
+from brain_games.games import brain_progression
+from brain_games import engine
 
 
 def main():
