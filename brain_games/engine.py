@@ -27,13 +27,13 @@ def congratulate(name):
     print(f'Congratulations, {name}!')
 
 
-def start_game(game, GAME_RULES):
+def start_game(game):
     user_name = greet_user()
-    print(GAME_RULES)
+    print(game.GAME_RULES)
     count = 0
     while count < 3:
         right_answer, question = game.generate_question()
-        print(question)
+        print(f'Question: {question}')
         answer = ask_user_answer()
         if answer == str(right_answer):
             count = win_round(count)
