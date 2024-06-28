@@ -19,7 +19,7 @@ def generate_question():
     number = random.randint(2, 100)
     if is_prime(number):
         right_answer = 'yes'
-    elif not is_prime(number):
+    else:
         right_answer = 'no'
     question = f'{number}'
     return right_answer, question
