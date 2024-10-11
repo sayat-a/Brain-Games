@@ -4,6 +4,14 @@
 # Description
 Brain Games is a set of five console games based on popular mobile brain training apps. Each game generates questions that need clear answers.
 After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
+# Installation
+<code>pip install --user git+https://github.com/sayat-a/brain-games</code>
+### Launch:
+* brain-calc
+* brain-even
+* brain-gcd
+* brain-prime
+* brain-progression
 # Demonstration
 brain-even demo (https://asciinema.org/a/XV4iADSpN3Qbvp5SCLDi5GfAu):
 ![demo](https://github.com/sayat-a/python-project-49/blob/main/demo/demo-brain-even.gif)
